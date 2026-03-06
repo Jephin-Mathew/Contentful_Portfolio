@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #080b11;
+  color: rgba(245, 248, 255, 0.92);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Make sure root never centers content (Vite default sometimes does) */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ✅ Your page width system */
+.section-inner,
+.container {
+  width: min(1160px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-inner,
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+/* ✅ IMPORTANT: kill any accidental section backgrounds/overlays */
+.section {
+  position: relative;
+  background: transparent !important;
+}
+
+/* If some old design added a band using ::before/::after, this removes it */
+.section::before,
+.section::after {
+  content: none !important;
+}

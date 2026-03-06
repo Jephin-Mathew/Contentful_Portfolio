@@ -1,0 +1,147 @@
+.services {
+  padding: 80px 0;
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+/* ===== Eyebrow "SERVICES" ===== */
+.services__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.services__eyebrowLine {
+  width: 18px;
+  height: 2px;
+  border-radius: 99px;
+  background: rgba(52, 245, 197, 0.9);
+  box-shadow: 0 0 18px rgba(52, 245, 197, 0.25);
+  opacity: 0.9;
+}
+
+.services__eyebrowText {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: rgba(52, 245, 197, 0.9);
+}
+
+/* ===== Title "What I Do" ===== */
+.services__title {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgba(245, 248, 255, 0.95);
+}
+
+.services__titleAccent {
+  color: rgba(52, 245, 197, 0.95);
+}
+
+/* ===== Cards Grid ===== */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* ===== Card ===== */
+.serviceCard {
+  border-radius: 22px;
+  padding: 28px 28px 26px;
+
+  /* Softer background like projects - no "hard band" effect */
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.26),
+    0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+
+  backdrop-filter: blur(14px);
+  min-height: 190px;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Icon chip (top-left) */
+.serviceCard__iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+
+  background: rgba(120, 80, 255, 0.10);
+  border: 1px solid rgba(120, 80, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.serviceCard__iconImg {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.serviceCard__iconEmoji {
+  font-size: 18px;
+  transform: translateY(-1px);
+}
+
+.serviceCard__iconFallback {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(52, 245, 197, 0.85);
+  box-shadow: 0 0 22px rgba(52, 245, 197, 0.22);
+}
+
+/* Text */
+.serviceCard__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 750;
+  color: rgba(245, 248, 255, 0.92);
+}
+
+.serviceCard__desc {
+  margin: 12px 0 0;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: rgba(230, 235, 245, 0.58);
+  max-width: 40ch;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px) {
+  .services {
+    padding: 64px 0;
+  }
+
+  .services__title {
+    font-size: 36px;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .serviceCard {
+    padding: 24px;
+  }
+}

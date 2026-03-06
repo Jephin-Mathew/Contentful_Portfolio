@@ -1,0 +1,436 @@
+/* ABOUT PAGE */
+
+.aboutPage {
+  width: 100%;
+}
+
+/* ------------------ */
+/* ABOUT HERO */
+/* ------------------ */
+.aboutHero {
+  position: relative;
+  overflow: hidden;
+  padding: 95px 0 70px;
+}
+
+.aboutHero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.aboutHero__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    900px 650px at 50% 30%,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.55) 70%
+  );
+}
+
+.aboutHero__glow {
+  position: absolute;
+  width: 820px;
+  height: 820px;
+  filter: blur(60px);
+  opacity: 0.55;
+  border-radius: 999px;
+}
+
+.aboutHero__glow--left {
+  left: -320px;
+  bottom: -320px;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 170, 0.30), transparent 60%);
+}
+
+.aboutHero__glow--right {
+  right: -360px;
+  top: -360px;
+  background: radial-gradient(circle at 30% 30%, rgba(120, 80, 255, 0.55), transparent 60%);
+}
+
+.aboutHero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutHero__grid {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.aboutHero__photoCard {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.02);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
+
+.aboutHero__photo {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutHero__photoPlaceholder {
+  height: 420px;
+  background: rgba(255,255,255,0.03);
+}
+
+.aboutHero__badge {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.40);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  min-width: 74px;
+}
+
+.aboutHero__badgeValue {
+  font-weight: 850;
+  font-size: 18px;
+  color: rgba(245,248,255,0.95);
+}
+
+.aboutHero__badgeLabel {
+  margin-top: 2px;
+  font-size: 10px;
+  color: rgba(230,235,245,0.55);
+}
+
+.aboutHero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(52, 245, 197, 0.9);
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.aboutHero__dash {
+  width: 28px;
+  height: 2px;
+  background: rgba(52, 245, 197, 0.9);
+  border-radius: 999px;
+}
+
+.aboutHero__title {
+  margin: 16px 0 0;
+  font-size: 44px;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 850;
+  color: rgba(245, 248, 255, 0.95);
+  max-width: 640px;
+}
+
+.aboutHero__titleAccent {
+  background: linear-gradient(90deg, #6b7bff, #34f5c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.aboutHero__bio {
+  margin-top: 14px;
+  color: rgba(230, 235, 245, 0.68);
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.aboutHero__bio p {
+  margin: 0 0 12px;
+}
+
+.aboutHero__ctaRow {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.aboutHero__values {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.aboutHero__valueCard {
+  padding: 14px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.20);
+  backdrop-filter: blur(12px);
+}
+
+.aboutHero__valueTitle {
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(245,248,255,0.92);
+}
+
+.aboutHero__valueDesc {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(230,235,245,0.55);
+  line-height: 1.6;
+}
+
+/* ------------------ */
+/* PROFICIENCY */
+/* ------------------ */
+.proficiency {
+  padding: 30px 0 70px;
+}
+
+.proficiency__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(52, 245, 197, 0.9);
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.proficiency__dash {
+  width: 28px;
+  height: 2px;
+  background: rgba(52, 245, 197, 0.9);
+  border-radius: 999px;
+}
+
+.proficiency__title {
+  margin: 14px 0 0;
+  font-size: 26px;
+  font-weight: 850;
+  color: rgba(245,248,255,0.92);
+}
+
+.proficiency__list {
+  margin-top: 22px;
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+}
+
+.proficiency__row {
+  display: grid;
+  grid-template-columns: 180px 1fr 46px;
+  gap: 14px;
+  align-items: center;
+}
+
+.proficiency__label {
+  font-size: 12px;
+  color: rgba(230,235,245,0.78);
+  font-weight: 650;
+}
+
+.proficiency__pct {
+  font-size: 12px;
+  color: rgba(230,235,245,0.50);
+  text-align: right;
+}
+
+.proficiency__bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+.proficiency__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6b7bff, #34f5c5);
+}
+
+/* Optional: map your colorKey values */
+.proficiency__fill--red { background: linear-gradient(90deg, #ff5b5b, #ff9b6b); }
+.proficiency__fill--blue { background: linear-gradient(90deg, #6b7bff, #34d6ff); }
+.proficiency__fill--green { background: linear-gradient(90deg, #34f5c5, #6bff97); }
+.proficiency__fill--purple { background: linear-gradient(90deg, #8b5bff, #34d6ff); }
+.proficiency__fill--orange { background: linear-gradient(90deg, #ffb84d, #ff6b6b); }
+
+/* ------------------ */
+/* EDUCATION + LANGUAGES GRID */
+/* ------------------ */
+.aboutGrid {
+  padding: 10px 0 90px;
+}
+
+.aboutGrid__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.aboutGrid__card {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 26px 70px rgba(0,0,0,0.22);
+  backdrop-filter: blur(14px);
+}
+
+.aboutGrid__cardHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.aboutGrid__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.aboutGrid__icon--purple {
+  box-shadow: 0 0 0 1px rgba(120,80,255,0.15) inset;
+  border-color: rgba(120,80,255,0.35);
+}
+
+.aboutGrid__icon--green {
+  box-shadow: 0 0 0 1px rgba(52,245,197,0.10) inset;
+  border-color: rgba(52,245,197,0.28);
+}
+
+.aboutGrid__cardTitle {
+  font-weight: 850;
+  font-size: 14px;
+  color: rgba(245,248,255,0.90);
+}
+
+.aboutGrid__stack {
+  display: grid;
+  gap: 12px;
+}
+
+.eduCard {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.20);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.eduCard__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.eduCard__degree {
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(245,248,255,0.92);
+}
+
+.eduCard__years {
+  font-size: 11px;
+  color: rgba(52,245,197,0.85);
+  background: rgba(52,245,197,0.10);
+  border: 1px solid rgba(52,245,197,0.16);
+  padding: 5px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.eduCard__inst {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(107,123,255,0.85);
+}
+
+.eduCard__desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(230,235,245,0.55);
+  line-height: 1.6;
+}
+
+.langRow {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.20);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.langRow__name {
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(245,248,255,0.92);
+}
+
+.langRow__level {
+  margin-top: 4px;
+  font-size: 11px;
+  color: rgba(230,235,245,0.55);
+}
+
+.langRow__badge {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(120,80,255,0.10);
+  border: 1px solid rgba(120,80,255,0.18);
+  color: rgba(230,235,245,0.80);
+}
+
+.aboutGrid__note {
+  margin-top: 4px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(120,80,255,0.08);
+  border: 1px solid rgba(120,80,255,0.14);
+  color: rgba(230,235,245,0.62);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .aboutHero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutHero__values {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutGrid__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proficiency__row {
+    grid-template-columns: 1fr;
+  }
+
+  .proficiency__pct {
+    text-align: left;
+    opacity: 0.7;
+  }
+}

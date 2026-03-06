@@ -1,0 +1,115 @@
+.skills {
+  padding: 88px 0 90px;
+}
+
+.skills__header {
+  text-align: center;
+}
+
+.skills__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(52, 245, 197, 0.9);
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.skills__dash {
+  width: 28px;
+  height: 2px;
+  background: rgba(52, 245, 197, 0.9);
+  border-radius: 999px;
+}
+
+.skills__title {
+  margin: 18px 0 0;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 850;
+  color: rgba(245, 248, 255, 0.95);
+}
+
+.skills__titleGradient {
+  background: linear-gradient(90deg, #6b7bff, #34f5c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.skills__table {
+  margin-top: 54px;
+  display: grid;
+  gap: 26px;
+}
+
+.skills__row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 22px;
+}
+
+.skills__label {
+  color: rgba(230, 235, 245, 0.38);
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.skills__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills__chip {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 650;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+  color: rgba(245, 248, 255, 0.86);
+}
+
+.skills__chip--purple {
+  border-color: rgba(120, 80, 255, 0.35);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.14),
+    0 0 0 1px rgba(120, 80, 255, 0.12) inset;
+}
+
+.skills__chip--green {
+  border-color: rgba(52, 245, 197, 0.28);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.14),
+    0 0 0 1px rgba(52, 245, 197, 0.10) inset;
+}
+
+.skills__empty {
+  margin-top: 18px;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills__title {
+    font-size: 48px;
+  }
+
+  .skills__row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skills__label {
+    opacity: 0.7;
+  }
+}

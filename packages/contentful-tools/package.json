@@ -1,0 +1,20 @@
+{
+  "name": "contentful-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "migrate:dev": "cross-env CONTENTFUL_ENV=dev node scripts/migrate-cli.js",
+    "migrate:qa": "cross-env CONTENTFUL_ENV=qa node scripts/migrate-cli.js",
+    "migrate:prod": "cross-env CONTENTFUL_ENV=prod node scripts/migrate-cli.js"
+  },
+  "dependencies": {
+    "any-observable": "^0.6.0",
+    "contentful-cli": "^3.10.3",
+    "contentful-migration": "^3.0.0",
+    "cross-env": "^7.0.0",
+    "dotenv": "^16.0.0",
+    "figures": "^3.2.0",
+    "listr": "^0.14.3",
+    "rxjs": "^7.8.1"
+  }
+}

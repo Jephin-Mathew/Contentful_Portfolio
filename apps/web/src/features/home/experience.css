@@ -1,0 +1,252 @@
+.exp {
+  padding: 96px 0 110px;
+}
+
+/* Header */
+.exp__header {
+  margin-bottom: 34px;
+}
+
+.exp__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(52, 245, 197, 0.9);
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.exp__dash {
+  width: 28px;
+  height: 2px;
+  background: rgba(52, 245, 197, 0.9);
+  border-radius: 999px;
+}
+
+.exp__title {
+  margin: 18px 0 0;
+  font-size: 56px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 850;
+  color: rgba(245, 248, 255, 0.95);
+}
+
+.exp__titleGradient {
+  background: linear-gradient(90deg, #6b7bff, #34f5c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Layout */
+.exp__layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 34px;
+  align-items: start;
+  margin-top: 26px;
+}
+
+/* Timeline rail (left) */
+.exp__rail {
+  position: relative;
+  width: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.exp__line {
+  width: 2px;
+  height: 420px;
+  background: linear-gradient(
+    180deg,
+    rgba(120, 80, 255, 0.55),
+    rgba(52, 245, 197, 0.35)
+  );
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.exp__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(120, 80, 255, 0.95);
+  box-shadow:
+    0 0 0 4px rgba(120, 80, 255, 0.14),
+    0 0 22px rgba(120, 80, 255, 0.35);
+}
+
+.exp__dot--bottom {
+  background: rgba(52, 245, 197, 0.95);
+  box-shadow:
+    0 0 0 4px rgba(52, 245, 197, 0.12),
+    0 0 22px rgba(52, 245, 197, 0.28);
+}
+
+/* Cards */
+.exp__cards {
+  display: grid;
+  gap: 22px;
+  max-width: 860px;
+}
+
+.exp__card {
+  position: relative;
+  border-radius: 22px;
+  padding: 22px 24px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+}
+
+.exp__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(120, 80, 255, 0.12), transparent 55%),
+    radial-gradient(circle at 70% 80%, rgba(52, 245, 197, 0.08), transparent 55%);
+}
+
+.exp__cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.exp__job {
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(245, 248, 255, 0.92);
+}
+
+.exp__companyRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.exp__companyIcon {
+  font-size: 12px;
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
+
+.exp__company {
+  font-size: 14px;
+  font-weight: 750;
+  color: rgba(120, 80, 255, 0.95);
+}
+
+.exp__badges {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 220px;
+}
+
+.exp__badge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: rgba(245, 248, 255, 0.78);
+}
+
+.exp__badge--muted {
+  border-color: rgba(120, 80, 255, 0.18);
+}
+
+.exp__badge--green {
+  border-color: rgba(52, 245, 197, 0.25);
+  color: rgba(52, 245, 197, 0.95);
+  box-shadow: 0 0 0 1px rgba(52, 245, 197, 0.08) inset;
+}
+
+.exp__desc {
+  position: relative;
+  z-index: 1;
+  margin: 14px 0 0;
+  max-width: 760px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: rgba(230, 235, 245, 0.62);
+}
+
+/* CTA button */
+.exp__ctaBtn {
+  margin-top: 10px;
+  width: 220px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 16px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  color: rgba(245, 248, 255, 0.9);
+  font-weight: 750;
+  font-size: 14px;
+  text-decoration: none;
+
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.exp__ctaBtn:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+.exp__ctaArrow {
+  font-size: 16px;
+  transform: translateY(-1px);
+}
+
+/* Empty */
+.exp__empty {
+  margin-top: 12px;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .exp__title {
+    font-size: 44px;
+  }
+
+  .exp__layout {
+    grid-template-columns: 22px 1fr;
+    gap: 18px;
+  }
+
+  .exp__line {
+    height: 520px;
+  }
+
+  .exp__badges {
+    min-width: 0;
+  }
+}

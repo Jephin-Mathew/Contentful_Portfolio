@@ -1,0 +1,75 @@
+ValidationFailed: {
+  "status": 422,
+  "statusText": "",
+  "message": "Validation error",
+  "details": {
+    "errors": [
+      {
+        "name": "size",
+        "details": "Size must be at least 1 and at most 50",
+        "path": [
+          "fields",
+          1,
+          "name"
+        ],
+        "value": "Availability Label (e.g., Available for opportunities)",
+        "min": 1,
+        "max": 50
+      }
+    ]
+  },
+  "request": {
+    "url": "https://api.contentful.com/spaces/8mu2qh80bizc/environments/dev/content_types/siteSettings",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-migration; sdk contentful-management-plain.js/0.0.0-determined-by-semantic-release; platform node.js/v20.20.0; os macOS/v20.20.0;",
+      "CF-Sequence": "f3335868-5b4d-4e9d-90cd-67c536a88a3c",
+      "Authorization": "Bearer ...7SwKU",
+      "X-Contentful-Version": "0",
+      "User-Agent": "axios/1.13.5",
+      "Content-Length": "773",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put",
+    "payloadData": "{\"name\":\"Site Settings\",\"displayField\":\"siteName\",\"fields\":[{\"id\":\"siteName\",\"name\":\"Site Name\",\"type\":\"Symbol\",\"localized\":true,\"required\":true},{\"id\":\"availabilityLabel\",\"name\":\"Availability Label (e.g., Available for opportunities)\",\"type\":\"Symbol\",\"localized\":true},{\"id\":\"logo\",\"name\":\"Logo\",\"type\":\"Link\",\"linkType\":\"Asset\"},{\"id\":\"primaryCtaText\",\"name\":\"Primary CTA Text\",\"type\":\"Symbol\",\"localized\":true},{\"id\":\"primaryCtaUrl\",\"name\":\"Primary CTA URL\",\"type\":\"Symbol\",\"validations\":[{\"regexp\":{\"pattern\":\"^(https?:\\\\/\\\\/|\\\\/).+\"}}]},{\"id\":\"footerText\",\"name\":\"Footer Text\",\"type\":\"Text\",\"localized\":true},{\"id\":\"socialLinks\",\"name\":\"Social Links (JSON array)\",\"type\":\"Object\"}],\"description\":\"Global site configuration: navbar, footer, social links, SEO defaults\"}"
+  },
+  "requestId": "1a89f786-c5b2-4604-9459-572029a4e52e"
+}
+    at errorHandler (/Users/jephin/React/portfolio/node_modules/contentful-management/dist/contentful-management.node.js:33926:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (/Users/jephin/React/portfolio/node_modules/contentful-management/dist/contentful-management.node.js:5635:10)
+    at async Task.task (/Users/jephin/React/portfolio/node_modules/contentful-migration/built/bin/cli.js:209:29)
+    at async Task.run (/Users/jephin/React/portfolio/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/jephin/React/portfolio/node_modules/listr2/node_modules/p-map/index.js:57:22NotFound: {
+  "status": 404,
+  "statusText": "",
+  "message": "The resource could not be found.",
+  "details": {
+    "type": "ContentType",
+    "id": "siteSettings",
+    "environment": "dev",
+    "space": "8mu2qh80bizc"
+  },
+  "request": {
+    "url": "https://api.contentful.com/spaces/8mu2qh80bizc/environments/dev/content_types/siteSettings/published",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.management.v1+json",
+      "X-Contentful-User-Agent": "app contentful.cli/0.0.0-determined-by-semantic-release; feature space-migration; sdk contentful-management-plain.js/0.0.0-determined-by-semantic-release; platform node.js/v20.20.0; os macOS/v20.20.0;",
+      "CF-Sequence": "f3335868-5b4d-4e9d-90cd-67c536a88a3c",
+      "Authorization": "Bearer ...7SwKU",
+      "X-Contentful-Version": "1",
+      "User-Agent": "axios/1.13.5",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "put"
+  },
+  "requestId": "5acbb604-71ea-4193-8e78-b3e0ac5828e8"
+}
+    at errorHandler (/Users/jephin/React/portfolio/node_modules/contentful-management/dist/contentful-management.node.js:33926:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (/Users/jephin/React/portfolio/node_modules/contentful-management/dist/contentful-management.node.js:5635:10)
+    at async Task.task (/Users/jephin/React/portfolio/node_modules/contentful-migration/built/bin/cli.js:209:29)
+    at async Task.run (/Users/jephin/React/portfolio/node_modules/listr2/dist/lib/task.js:213:21)
+    at async /Users/jephin/React/portfolio/node_modules/listr2/node_modules/p-map/index.js:57:22

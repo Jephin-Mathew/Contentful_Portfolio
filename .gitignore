@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.env.*
+apps/web/.env
+apps/api/.env
+packages/contentful-tools/.env
+.DS_Store
